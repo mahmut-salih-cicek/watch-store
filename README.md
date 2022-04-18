@@ -2,6 +2,7 @@
 Apple Watch Store
 
 Download With Google Play:
+https://play.google.com/store/apps/details?id=com.sout.custom_apple_watch&hl=tr&gl=US
 
 
 <p align="center">
