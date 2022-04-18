@@ -1,0 +1,336 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="243dp"
+    android:layout_height="276dp"
+    android:padding="@dimen/widget_margin"
+    android:background="#000099CC">
+
+
+    <ImageView
+        android:layout_width="243dp"
+        android:layout_height="276dp"
+        android:background="@drawable/main3"></ImageView>
+
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="186dp"
+        android:autoSizeMaxTextSize="49sp"
+        android:autoSizeMinTextSize="40sp"
+        android:autoSizeStepGranularity="1sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/font1"
+        android:format24Hour="HH:mm"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="12:28"
+        android:textColor="@color/white"
+        android:textSize="49sp">
+
+    </TextClock>
+
+
+    <TextClock
+        android:layout_width="83dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="164dp"
+        android:autoSizeStepGranularity="1sp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/shape4"
+        android:fontFamily="@font/font1"
+        android:format24Hour="ss"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="2dp"
+        android:text="58"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp">
+
+    </TextClock>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="49dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="121dp">
+
+
+        <TextClock
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="0dp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/cabin_bold"
+            android:format24Hour="MMM"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Eki"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextClock>
+
+        <TextClock
+            android:layout_width="32dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="0dp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/font1"
+            android:format24Hour="dd"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="11"
+            android:textColor="#E56607"
+            android:textSize="22sp">
+
+        </TextClock>
+
+        <TextClock
+            android:id="@+id/font"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="0dp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/cabin_bold"
+            android:format24Hour="EEE"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Pzt"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextClock>
+
+    </RelativeLayout>
+
+    <ImageView
+
+        android:layout_width="59dp"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="151dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="151dp"
+        android:background="@drawable/rippme"
+        android:src="@drawable/shape"></ImageView>
+
+
+    <TextView
+        android:id="@+id/appwidget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="196dp"
+        android:gravity="center"
+        android:text="23°C"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_sync"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="13dp"
+        android:src="@android:drawable/stat_notify_sync"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="155dp"
+        android:src="@drawable/weather_ico"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/shape2">
+
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/battery_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/ic_baseline_battery_full_24"></ImageView>
+
+    <TextView
+        android:id="@+id/battery_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="88dp"
+        android:autoSizeStepGranularity="1sp"
+        android:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:text="%100"
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
+
+    <ImageView
+
+        android:id="@+id/battery_cell_1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/shape3">
+
+    </ImageView>
+
+    <ImageView
+
+        android:id="@+id/battery_cell_2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/shape3">
+    </ImageView>
+
+    <ImageView
+
+        android:id="@+id/battery_cell_3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/shape3">
+    </ImageView>
+
+    <ImageView
+
+        android:id="@+id/battery_cell_4"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/shape3">
+    </ImageView>
+
+    <ImageView
+
+        android:id="@+id/battery_cell_5"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/shape3">
+    </ImageView>
+
+    <ImageView
+
+        android:id="@+id/battery_cell_6"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/shape3">
+    </ImageView>
+
+    <ImageView
+
+        android:id="@+id/battery_cell_7"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/shape3">
+    </ImageView>
+
+    <ImageView
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="87dp"
+        android:background="@drawable/temp2"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitXY"></ImageView>
+
+    <TextView
+        android:id="@+id/battery_Temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="88dp"
+        android:text="28.5°C"
+        android:textColor="@color/white"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+
+</RelativeLayout>

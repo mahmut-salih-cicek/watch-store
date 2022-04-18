@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Apple Watch Widget</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+
+
+    <string name="_00_00" translatable="false">00:00</string>
+    <string name="current_time">Current time</string>
+    <string name="channel_name">Service start notification</string>
+    <string name="notification_title">Code Clock Widget</string>
+    <string name="notification_text">Code Clock Widget</string>
+    <string name="add" translatable="false"> #include  </string>
+    <string name="already_have_an_account">Already have  an account? <font color='#01C6DB'>Login</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

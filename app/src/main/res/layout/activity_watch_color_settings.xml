@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.WatchColorSettings">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="243dp"
+        android:layout_height="287dp"
+        android:layout_marginBottom="330dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:id="@+id/face1_color_activity"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+
+            <ImageView
+                android:layout_width="243dp"
+                android:layout_height="276dp"
+                android:background="@drawable/main3">
+
+            </ImageView>
+
+
+            <TextClock
+                android:id="@+id/COLOR_TIME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="99dp"
+                android:layout_marginBottom="185dp"
+                android:autoSizeMaxTextSize="49sp"
+                android:autoSizeMinTextSize="40sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/font1"
+                android:format24Hour="HH:mm"
+                android:gravity="center"
+                android:maxLines="1"
+                android:onClick="COLOR_TIME"
+                android:text="12:28"
+                android:textColor="@color/white"
+                android:textSize="49sp">
+
+            </TextClock>
+
+            <TextClock
+                android:id="@+id/COLOR_TIME_MINUTES"
+                android:layout_width="83dp"
+                android:layout_height="21dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="41dp"
+                android:layout_marginTop="91dp"
+                android:layout_marginEnd="119dp"
+                android:layout_marginBottom="164dp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/shape4"
+                android:fontFamily="@font/font1"
+                android:format24Hour="ss"
+                android:gravity="center"
+                android:maxLines="1"
+                android:onClick="COLOR_TIME_MINUTES"
+                android:padding="2dp"
+                android:text="58"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp">
+
+            </TextClock>
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="49dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="69dp"
+                android:layout_marginBottom="121dp">
+
+
+                <TextClock
+                    android:id="@+id/COLOR_MOON"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="0dp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/cabin_bold"
+                    android:format24Hour="MMM"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:onClick="COLOR_MOON"
+                    android:text="Eki"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextClock>
+
+                <TextClock
+                    android:id="@+id/COLOR_WEEK"
+                    android:layout_width="32dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginBottom="0dp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/font1"
+                    android:format24Hour="dd"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:onClick="COLOR_WEEK"
+                    android:text="11"
+                    android:textColor="#E56607"
+                    android:textSize="22sp">
+
+                </TextClock>
+
+                <TextClock
+                    android:id="@+id/COLOR_DAY"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/cabin_bold"
+                    android:format24Hour="EEE"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:onClick="COLOR_DAY"
+                    android:text="Pzt"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextClock>
+
+            </RelativeLayout>
+
+            <ImageView
+
+                android:layout_width="59dp"
+                android:layout_height="88dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="151dp"
+                android:layout_marginEnd="33dp"
+                android:layout_marginBottom="151dp"
+                android:background="@drawable/rippme"
+                android:src="@drawable/shape"></ImageView>
+
+
+            <TextView
+                android:id="@+id/COLOR_WEATHER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="33dp"
+                android:layout_marginBottom="196dp"
+                android:gravity="center"
+                android:onClick="COLOR_WEATHER"
+                android:text="23°C"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold|italic"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_sync"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="104dp"
+                android:layout_marginBottom="13dp"
+                android:src="@android:drawable/stat_notify_sync"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/weather_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="155dp"
+                android:src="@drawable/weather_ico"
+                android:visibility="visible" />
+
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/shape2">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/battery_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="171dp"
+                android:layout_marginBottom="86dp"
+                android:background="@drawable/ic_baseline_battery_full_24"></ImageView>
+
+            <TextView
+                android:id="@+id/COLOR_BATTERY_TEXT"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="65dp"
+                android:layout_marginEnd="135dp"
+                android:layout_marginBottom="89dp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:maxLines="1"
+                android:onClick="COLOR_BATTERY_TEXT"
+                android:text="%100"
+                android:textColor="@color/white"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+
+                android:id="@+id/battery_cell_1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="178dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/shape3">
+
+            </ImageView>
+
+            <ImageView
+
+                android:id="@+id/battery_cell_2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="158dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/shape3"></ImageView>
+
+            <ImageView
+
+                android:id="@+id/battery_cell_3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="138dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/shape3"></ImageView>
+
+            <ImageView
+
+                android:id="@+id/battery_cell_4"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="119dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/shape3"></ImageView>
+
+            <ImageView
+
+                android:id="@+id/battery_cell_5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="98dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/shape3"></ImageView>
+
+            <ImageView
+
+                android:id="@+id/battery_cell_6"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="79dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/shape3"></ImageView>
+
+            <ImageView
+
+                android:id="@+id/battery_cell_7"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/shape3"></ImageView>
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="106dp"
+                android:layout_marginBottom="87dp"
+                android:background="@drawable/temp2"
+                android:backgroundTint="@color/white"
+                android:scaleType="fitXY"></ImageView>
+
+            <TextView
+                android:id="@+id/COLOR_BATTERY_TEMP_TEXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="62dp"
+                android:layout_marginBottom="88dp"
+                android:onClick="COLOR_BATTERY_TEMP_TEXT"
+                android:text="28.5°C"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/face2_color_activity"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="243dp"
+                android:layout_height="276dp"
+                android:background="@drawable/main3">
+
+            </ImageView>
+
+
+            <ProgressBar
+
+                android:id="@+id/circularProgressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="114dp"
+                android:layout_height="161dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="138dp"
+                android:layout_marginBottom="94dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="@drawable/custom_progressbar_drawable"
+                android:secondaryProgress="100" />
+
+
+            <TextView
+                android:id="@+id/face2_battery_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="178dp"
+                android:layout_marginBottom="165dp"
+                android:gravity="center"
+                android:onClick="face2_battery_level"
+                android:text="25"
+                android:textColor="@color/light_blue_50"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="106dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="94dp"
+                android:layout_marginBottom="133dp"
+                android:background="@drawable/face2_shape_7">
+
+            </ImageView>
+
+
+            <TextClock
+                android:id="@+id/face2_clock_hour"
+                android:layout_width="57dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="96dp"
+                android:layout_marginBottom="179dp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/gotham_narrow_bold"
+                android:format24Hour="HH"
+                android:gravity="center"
+                android:maxLines="1"
+                android:onClick="face2_clock_hour"
+                android:text="23"
+                android:textColor="@color/light_blue_50"
+                android:textSize="45sp"
+                android:textStyle="bold"></TextClock>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="39dp"
+                android:layout_marginBottom="152dp"
+                android:background="@drawable/face2_shape8">
+
+            </ImageView>
+
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="99dp"
+                android:layout_marginBottom="119dp"
+                android:background="@drawable/face2_shape_5"
+                android:rotation="0">
+
+            </ImageView>
+
+
+            <TextClock
+                android:id="@+id/face2_calendar_day"
+                android:layout_width="33dp"
+                android:layout_height="26dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="46dp"
+                android:layout_marginBottom="152dp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/gotham_narrow_bold"
+                android:format24Hour="dd"
+                android:gravity="center"
+                android:maxLines="1"
+                android:onClick="face2_calendar_day"
+                android:text="23"
+                android:textColor="@color/color4"
+                android:textSize="45sp"
+                android:textStyle="bold"></TextClock>
+
+            <TextClock
+                android:id="@+id/face2_calendar_moon"
+                android:layout_width="33dp"
+                android:layout_height="26dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="47dp"
+                android:layout_marginBottom="173dp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/gotham_narrow_bold"
+                android:format24Hour="MMM"
+                android:gravity="center"
+                android:maxLines="1"
+                android:onClick="face2_calendar_moon"
+                android:text="Nov"
+                android:textColor="@color/color4"
+                android:textSize="45sp"
+                android:textStyle="bold"></TextClock>
+
+            <TextClock
+                android:id="@+id/face2_clock_minutes"
+                android:layout_width="57dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="95dp"
+                android:layout_marginBottom="131dp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/gotham_narrow_bold"
+                android:format24Hour="mm"
+                android:gravity="center"
+                android:maxLines="1"
+                android:onClick="face2_clock_minutes"
+                android:text="10"
+                android:textColor="@color/light_blue_50"
+                android:textSize="45sp"
+                android:textStyle="bold">
+
+            </TextClock>
+
+            <ImageView
+                android:id="@+id/face2_day1"
+                android:layout_width="24dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="195dp"
+                android:layout_marginBottom="56dp"
+                android:background="@drawable/face2_shape_4"></ImageView>
+
+            <ImageView
+                android:id="@+id/face2_day3"
+                android:layout_width="24dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="140dp"
+                android:layout_marginBottom="56dp"
+                android:background="@drawable/face2_shape_4"></ImageView>
+
+            <ImageView
+                android:id="@+id/face2_day2"
+                android:layout_width="24dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="168dp"
+                android:layout_marginBottom="56dp"
+                android:background="@drawable/face2_shape_4"></ImageView>
+
+            <ImageView
+                android:id="@+id/face2_day4"
+                android:layout_width="24dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="113dp"
+                android:layout_marginBottom="56dp"
+                android:background="@drawable/face2_shape_3"></ImageView>
+
+            <ImageView
+                android:id="@+id/face2_day5"
+                android:layout_width="24dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="86dp"
+                android:layout_marginBottom="56dp"
+                android:background="@drawable/face2_shape_4"></ImageView>
+
+            <ImageView
+                android:id="@+id/face2_day6"
+                android:layout_width="24dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="59dp"
+                android:layout_marginBottom="56dp"
+                android:background="@drawable/face2_shape_4"></ImageView>
+
+            <ImageView
+                android:id="@+id/face2_day7"
+                android:layout_width="24dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="31dp"
+                android:layout_marginBottom="56dp"
+                android:background="@drawable/face2_shape_4"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="201dp"
+                android:layout_marginBottom="37dp"
+                android:text="M"
+                android:textColor="#C1C1C1"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="176dp"
+                android:layout_marginBottom="36dp"
+                android:text="T"
+                android:textColor="#C1C1C1"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="146dp"
+                android:layout_marginBottom="35dp"
+                android:text="W"
+                android:textColor="#C1C1C1"
+                android:textSize="14dp"></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="122dp"
+                android:layout_marginBottom="35dp"
+                android:text="T"
+                android:textColor="#C1C1C1"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="94dp"
+                android:layout_marginBottom="35dp"
+                android:text="F"
+                android:textColor="#C1C1C1"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="67dp"
+                android:layout_marginBottom="35dp"
+                android:text="S"
+                android:textColor="#C1C1C1"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="39dp"
+                android:layout_marginBottom="35dp"
+                android:text="S"
+                android:textColor="#C1C1C1"
+                android:textSize="14dp"></TextView>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/selected_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="252dp"
+        android:fontFamily="@font/gotham_bold"
+        android:text="Selected Item : "
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="141dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/shape"
+        android:onClick="button_Set_Color"
+        android:text="Set Color"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

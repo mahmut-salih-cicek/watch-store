@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="243dp"
+    android:layout_height="276dp"
+    android:padding="@dimen/widget_margin"
+    android:background="#000">
+
+    <ImageView
+        android:layout_width="243dp"
+        android:layout_height="276dp"
+        android:background="@drawable/main3"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="49dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="200dp">
+
+
+        <TextClock
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="0dp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/cabin_bold"
+            android:format24Hour="MMM"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Eki"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextClock>
+
+        <TextClock
+            android:layout_width="32dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="0dp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/font1"
+            android:format24Hour="dd"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="11"
+            android:textColor="#E56607"
+            android:textSize="22sp">
+
+        </TextClock>
+
+        <TextClock
+            android:id="@+id/font"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="0dp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/cabin_bold"
+            android:format24Hour="EEE"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Pzt"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextClock>
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_width="79dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/shape"></ImageView>
+
+    <ImageView
+        android:layout_width="79dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="147dp"
+        android:background="@drawable/shape"></ImageView>
+
+    <ImageView
+        android:layout_width="79dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/shape"></ImageView>
+
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/ic_baseline_directions_run_24"
+        android:backgroundTint="@color/black">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/face3_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="156dp"
+        android:fontFamily="@font/gotham_bold"
+        android:text="65"
+        android:textColor="@color/color4">
+
+    </TextView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="98dp"
+        android:background="@drawable/fire"
+        android:backgroundTint="@color/black">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/ic_baseline_battery_full_24"
+        android:backgroundTint="@color/black">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/face3_kcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="101dp"
+        android:fontFamily="@font/gotham_bold"
+        android:text="19"
+        android:textColor="@color/color4">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/face3_battery"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="44dp"
+        android:autoSizeStepGranularity="1sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/gotham_bold"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="%89"
+        android:textColor="@color/color4">
+
+    </TextView>
+
+
+    <TextClock
+        android:layout_width="74dp"
+        android:layout_height="203dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="10dp"
+        android:autoSizeMaxTextSize="49sp"
+        android:autoSizeMinTextSize="40sp"
+        android:autoSizeStepGranularity="1sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/font1"
+        android:format24Hour="HH mm ss"
+        android:gravity="center"
+        android:maxLines="3"
+        android:text="12 28 55"
+        android:textColor="@color/white"
+        android:textSize="49sp">
+
+    </TextClock>
+
+
+</RelativeLayout>
